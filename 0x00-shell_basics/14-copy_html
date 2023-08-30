@@ -1,25 +1,3 @@
 #!/bin/bash
-
-# Get the current working directory
-current_dir=$(pwd)
-
-# Get the parent directory
-parent_dir=$(dirname "$current_dir")
-
-# Loop through HTML files in the current directory
-for html_file in *.html; do
-    # Check if the file exists in the parent directory
-    if [ -e "$parent_dir/$html_file" ]; then
-        # Compare modification times
-        if [ "$current_dir/$html_file" -nt "$parent_dir/$html_file" ]; then
-            echo "Copying $html_file to $parent_dir"
-            cp "$html_file" "$parent_dir"
-        else
-            echo "$html_file is already up to date in $parent_dir"
-        fi
-    else
-        echo "Copying $html_file to $parent_dir"
-        cp "$html_file" "$parent_dir"
-    fi
-done
+for file in *.html; do [ ! -e "../$file" ] || [ "$file" -nt "../$file" ] && cp "$file" "../"; done
 
