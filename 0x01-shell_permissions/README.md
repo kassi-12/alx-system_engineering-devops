@@ -1,1 +1,1 @@
-this is a dic permissions
+this is a dir scripte
