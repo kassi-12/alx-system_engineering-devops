@@ -1,2 +1,3 @@
 #!/bin/bash
-telnet towel.blinkenglights.nl
+chgrp school hello
+
