@@ -1,1 +1,1 @@
-this is my init file
+this is Shell, init files, variables and expansions
