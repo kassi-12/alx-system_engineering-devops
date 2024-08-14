@@ -1,4 +1,6 @@
-#In wp-settings.php there is a misspell in lIne 137
-exec { 'change the error':
-  command => '/usr/bin/sudo /bin/sed -i "s/class-wp-locale.phpp/class-wp-locale.php/g" /var/www/html/wp-settings.php'
-    }
+# Fix 500 error when a GET HTTP method is requested to Apache web server
+
+exec {'replace':
+  provider => shell,
+  command  => 'sed -i "s/phpp/php/g" /var/www/html/wp-settings.php'
+}

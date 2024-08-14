@@ -1,1 +1,1 @@
-this is dir scripte
+alx-shell_basics
