@@ -16,7 +16,7 @@ The specific list of projects contained follows:
 
 ## Author :black_nib:
 
-* __Bamidele Adefolaju__ <[lexxyla](https://github.com/lexxyla)>
+* __Bamidele Adefolaju__ <[lexxyla](https://github.com/kassi-12)>
 
 ## Acknowledgements :pray:
 
